@@ -35,6 +35,7 @@ ul {
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
   --body-color-second: hsla(0, 0%, 100%);
+  --body-color-testimonials: hsla(0, 0%, 89%);
 }
 
 /* ===   BASE   ======================*/
@@ -90,6 +91,16 @@ body {
     hsla(var(--hue), 65%, 88%, 0.34),
     hsla(var(--hue), 36%, 57%, 1)
   );
+}
+
+/* ===  SWIPER LIB DA TESTIMONIALS   ======================*/
+
+.swiper {
+  padding: 1rem;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--base-color);
 }
 
 /* ===   LAYOUT   ======================*/
@@ -392,7 +403,7 @@ nav.show div.icon-close {
 #testimonials cite {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
   font-style: normal;
 }
 
@@ -402,3 +413,5 @@ nav.show div.icon-close {
   object-fit: cover;
   clip-path: circle();
 }
+
+/* ===  SWIPER LIB DA TESTIMONIALS   ======================*/

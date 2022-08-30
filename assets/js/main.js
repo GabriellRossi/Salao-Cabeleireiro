@@ -9,26 +9,23 @@ for (const element of toggle) {
   })
 }
 
-
 /* Quando clicar em um item do menu, esconder o menu */
 
 const links = document.querySelectorAll('ul li a')
 
-for(const link of links) {
-  link.addEventListener('click', function() {
+for (const link of links) {
+  link.addEventListener('click', function () {
     nav.classList.remove('show')
   })
 }
 
-
 /* Mudar o header da página quando der scroll */
 
-const header = document.querySelector("#header");
-const navHeight = header.offsetHeight;
+const header = document.querySelector('#header')
+const navHeight = header.offsetHeight
 
-window.addEventListener('click', function() {
-  if(window.scrollY >= navHeight) {
-
+window.addEventListener('click', function () {
+  if (window.scrollY >= navHeight) {
     // scroll é maior que a altura do header
     header.classList.add('scroll')
   } else {
@@ -37,29 +34,15 @@ window.addEventListener('click', function() {
   }
 })
 
-
-
 /* TESTIMONIALS CAROUSEL SLIDER SWIPER */
 
-
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
-
-  // If we need pagination
+  slidesPerView: 1,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination'
   },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+  mousewheel: true,
+  keyboard: true
+})
