@@ -542,8 +542,28 @@ footer .social a:hover {
 /* ===   RESPONSIVO  ======================*/
 
 @media (min-width: 1200px) {
+  
+/* ===   REUSE DE CLASSES  ======================*/
+  .container {
+    max-width: 1120px;
+    margin-inline: auto;
+  }
+
   .section {
     padding: 10rem 0;
+  }
+
+
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+
+  .button {
+    height: 3.125rem;
   }
 
   nav .menu {
@@ -552,6 +572,7 @@ footer .social a:hover {
     top: 0;
   }
 
+/* ===   NAVIGATION  ======================*/
   nav .menu ul {
     display: flex;
     gap: 2rem;
@@ -559,11 +580,44 @@ footer .social a:hover {
 
   nav .menu ul li a.title {
     font: 400 var(--body-font);
+    color: var(--title-color);
   }
 
+  nav .icon-menu {
+    display: none;
+  }
+
+  
+  /* ===   LAYOUT  ======================*/
   main {
     margin-top: var(--header-height);
   }
+
+
+  /* ===   HOME  ======================*/
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+
+  /* ===   ABOUT  ======================*/
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
 }
 
 @media (min-width: 992px) {
