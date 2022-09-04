@@ -39,14 +39,18 @@ function changeHeaderWhenScroll() {
 /* TESTIMONIALS CAROUSEL SLIDER SWIPER */
 
 const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
   slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination'
   },
   mousewheel: true,
-  keyboard: true
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
 })
 
 /* SCROLLREVEAL: Mostrar elementos quando der scroll na página*/
