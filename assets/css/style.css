@@ -634,6 +634,28 @@ footer .social a:hover {
     margin-inline: auto;
   }
 
+  /* ===   CONTACT  ======================*/
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+
+  /* ===   FOOTER  ======================*/
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 }
 
 @media (min-width: 992px) {
