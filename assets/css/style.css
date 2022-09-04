@@ -618,6 +618,22 @@ footer .social a:hover {
     grid-auto-flow: column;
   }
 
+
+  /* ===   SERVICES  ======================*/
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-inline: 3rem;
+  }
+  
+  /* ===   TESTIMONIALS  ======================*/
+
+#testimonials .container {
+    margin-inline: auto;
+  }
+
 }
 
 @media (min-width: 992px) {
