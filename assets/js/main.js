@@ -1,5 +1,4 @@
-/* Abre e fecha o menu quando clicar no icone */
-
+/*  abre e fecha o menu quando clicar no icone: hamburguer e x */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -9,9 +8,8 @@ for (const element of toggle) {
   })
 }
 
-/* Quando clicar em um item do menu, esconder o menu */
-
-const links = document.querySelectorAll('ul li a')
+/* quando clicar em um item do menu, esconder o menu */
+const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
   link.addEventListener('click', function () {
@@ -19,7 +17,7 @@ for (const link of links) {
   })
 }
 
-/* Mudar o header da página quando der scroll */
+/* mudar o header da página quando der scroll */
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
 
@@ -28,13 +26,12 @@ function changeHeaderWhenScroll() {
     // scroll é maior que a altura do header
     header.classList.add('scroll')
   } else {
-    // Menor que a altura do header
+    // menor que a altura do header
     header.classList.remove('scroll')
   }
 }
 
-/* TESTIMONIALS CAROUSEL SLIDER SWIPER */
-
+/* Testimonials carousel slider swiper */
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   pagination: {
@@ -50,8 +47,7 @@ const swiper = new Swiper('.swiper', {
   }
 })
 
-/* SCROLLREVEAL: Mostrar elementos quando der scroll na página*/
-
+/* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -60,19 +56,19 @@ const scrollReveal = ScrollReveal({
 })
 
 scrollReveal.reveal(
-  `#home .image, #home .text, 
+  `#home .image, #home .text,
   #about .image, #about .text,
   #services header, #services .card,
   #testimonials header, #testimonials .testimonials,
-  #contact .text, #contact .links
-  #footer .brand, footer .social
+  #contact .text, #contact .links,
+  footer .brand, footer .social
   `,
-  { ìnterval: 100 }
+  { interval: 100 }
 )
 
-/* BOTÃO VOLTAR PARA O TOPO */
-
+/* Botão voltar para o topo */
 const backToTopButton = document.querySelector('.back-to-top')
+
 function backToTop() {
   if (window.scrollY >= 560) {
     backToTopButton.classList.add('show')
@@ -81,11 +77,9 @@ function backToTop() {
   }
 }
 
-/* MENU ATIVO CONFORME A SEÇÃO VISÍVEL NA PÁGINA */
-
-const sections = document.querySelector('main section[id]')
-
-function activeMenuAtCurrentSection() {
+/* Menu ativo conforme a seção visível na página */
+const sections = document.querySelectorAll('main section[id]')
+function activateMenuAtCurrentSection() {
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
 
   for (const section of sections) {
@@ -113,5 +107,5 @@ function activeMenuAtCurrentSection() {
 window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
   backToTop()
-  activeMenuAtCurrentSection()
+  activateMenuAtCurrentSection()
 })
