@@ -22,7 +22,7 @@
 <br>
 
 <p align="center">
-  <img alt="" src=".github/preview-mobile.png" width="100%">
+  <img alt="" src=".github/preview-mobile.png" width="60%">
 </p>
 
 ## 🚀 Tecnologias
