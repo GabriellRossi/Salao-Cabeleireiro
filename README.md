@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="" src=".github/preview.png" width="100%">
+  <img alt="" src=".github/preview-desktop.png" width="100%">
 </p>
 
 <p align="center">
@@ -19,11 +19,10 @@
   <img src="https://img.shields.io/github/stars/GabriellRossi/barbearia-alura?label=stars&message=MIT&color=5822b4&labelColor=991eeb " alt="Stars">
 </p>
 
-
 <br>
 
 <p align="center">
-  <img alt="" src=".github/preview.png" width="100%">
+  <img alt="" src=".github/preview-mobile.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -37,7 +36,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 🚧 Projeto:
 
 Live Preview: https://salao-cabeleireiro.vercel.app/
-
 
 ## 🎨 Inspiração:
 
